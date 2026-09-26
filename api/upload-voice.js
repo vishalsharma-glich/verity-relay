@@ -20,7 +20,7 @@ export const config = {
 // Studio may show a "Click to share access" warning until granted.
 async function grantUniversePermission(assetId, openCloudKey) {
   const universeId = process.env.VERITY_UNIVERSE_ID;
-  if (!10764292753) {
+  if (!UNIVERSEID) {
     console.error('[grantUniversePermission] VERITY_UNIVERSE_ID not set, skipping grant.');
     return;
   }
